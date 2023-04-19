@@ -66,7 +66,7 @@ pub struct Ctx<'js> {
 }
 
 impl<'js> Ctx<'js> {
-    pub(crate) fn as_ptr(&self) -> *mut qjs::JSContext {
+    pub fn as_ptr(&self) -> *mut qjs::JSContext {
         self.ctx.as_ptr()
     }
 
