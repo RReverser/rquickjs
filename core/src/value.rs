@@ -134,7 +134,7 @@ impl<'js> Value<'js> {
     }
 
     #[inline]
-    pub(crate) fn into_js_value(self) -> qjs::JSValue {
+    pub fn into_js_value(self) -> qjs::JSValue {
         let value = self.value;
         mem::forget(self);
         value
